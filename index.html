@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo-app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div id="container">
+
+    <div class="toDo-app" id="head">
+      <h1>Tasks of the Day </h1> <img src="Todo.png" alt="Todo">
+
+
+    </div>
+
+    <div class="toDo-app" id="add-task">
+
+      <input type="text" id="task" placeholder="Add task for the day..✍️" maxlength="45">
+      <button id="add" onclick="addTask()">Add</button>
+
+    </div>
+
+    <p class="error success" id="para"></p>
+
+    <div class="toDo-app" id="task-area">
+
+      <ul id="task-list">
+        
+      </ul>
+      
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+
+</html>

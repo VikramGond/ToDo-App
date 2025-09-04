@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(135deg, rgb(255, 0, 162), rgb(98, 0, 255));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#container {
+  background-color: rgb(246, 246, 246);
+  width: 100%;
+  max-width: 540px;
+  border-radius: 10px;
+  margin: 50px auto;
+  padding: 10px 20px 15px;
+  text-align: center;
+}
+
+#container h1 {
+  color: rgb(32, 32, 32);
+  font-weight: 800;
+  display: inline-block;
+  margin: 10px 0 20px;
+}
+
+#container img {
+  height: 50px;
+  position: relative;
+  top: 15px;
+}
+
+#add-task {
+  margin: 0 0 10px;
+}
+
+input[type="text"] {
+  width: 80%;
+  height: 30px;
+  padding: 8px 15px;
+
+  border-radius: 20px;
+  outline: none;
+  transition: transform, border, box-shadow 0.2s linear;
+}
+
+input::placeholder {
+  color: green;
+}
+
+input[type="text"]:focus {
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: scale(1.005);
+  border: 2px solid rgb(4, 209, 28);
+}
+
+button {
+  height: 30px;
+  width: 10%;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border: 2px solid rgb(6, 211, 13);
+  color: black;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+
+button:hover {
+  transform: scale(1.01);
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(145deg, rgb(55, 0, 255), rgb(255, 0, 221));
+  color: white;
+  border: none;
+}
+
+.success {
+  font-size: 14px;
+  color: green;
+}
+
+.error {
+  font-size: 14px;
+  color: red;
+}
+
+#task-area {
+  width: 90%;
+  text-align: left;
+  padding: 10px 25px;
+  border-radius: 20px;
+  margin: 0px auto;
+}
+
+ul li {
+  list-style:none;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+span {
+  position: absolute;
+  right: 0;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: rgb(83, 81, 81);
+}
