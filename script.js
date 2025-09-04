@@ -81,6 +81,12 @@ taskList.addEventListener("click", function (e) {
 
 });
 
+task.addEventListener("keypress", function(e) {
+  if(e.key === 'Enter'){
+    addTask();
+  }
+});
+
 
 
 function saveData() {
